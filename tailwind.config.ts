@@ -47,16 +47,23 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
-        },
+        primario: "var(--primario)",
+        "primario-deep": "var(--primario-deep)",
+        "primario-medio": "var(--primario-medio)",
+        "primario-light": "var(--primario-light)",
+        "primario-pale": "var(--primario-pale)",
+        "primario-subtle": "var(--primario-subtle)",
+        oscuro: "var(--oscuro)",
+        "texto-primario": "var(--texto-primario)",
+        "texto-secundario": "var(--texto-secundario)",
+        "texto-muted": "var(--texto-muted)",
+        fondo: "var(--fondo)",
+        "fondo-alt": "var(--fondo-alt)",
+      },
+      fontFamily: {
+        titulos: ["var(--font-titulos)", "serif"],
+        subtitulos: ["var(--font-subtitulos)", "sans-serif"],
+        cuerpo: ["var(--font-cuerpo)", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -65,20 +72,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
