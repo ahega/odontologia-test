@@ -26,7 +26,7 @@ const FAQ = () => {
                 className="scroll-child scroll-animate rounded-xl overflow-hidden transition-all duration-300"
                 style={{
                   border: "1px solid rgba(45,189,143,0.2)",
-                  borderLeft: isOpen ? "4px solid var(--primario)" : "1px solid rgba(45,189,143,0.2)",
+                  borderLeft: isOpen ? "4px solid var(--primario)" : "1px solid var(--border-mint)",
                   background: isOpen ? "var(--primario-subtle)" : "var(--fondo)",
                 }}
               >
