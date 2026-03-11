@@ -18,7 +18,7 @@ const Hero = () => {
       {/* Dot grid */}
       <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "radial-gradient(white 1px, transparent 1px)", backgroundSize: "24px 24px" }} />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-[8%] w-full grid lg:grid-cols-2 gap-12 items-center py-32 lg:py-0">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-[8%] w-full grid lg:grid-cols-2 gap-12 items-center pt-40 pb-32 lg:pt-32 lg:pb-0">
         {/* Left */}
         <div className="max-w-[680px]">
           <span
