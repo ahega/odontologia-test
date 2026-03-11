@@ -39,7 +39,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className="fixed top-0 left-0 right-0 z-50 transition-all duration-400"
+        className="fixed top-0 md:top-[28px] left-0 right-0 z-50 transition-all duration-400"
         style={{
           backgroundColor: scrolled ? "var(--fondo)" : "transparent",
           borderBottom: scrolled ? "1px solid var(--primario)" : "1px solid transparent",

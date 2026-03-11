@@ -2,7 +2,8 @@ import CONFIG from "../config.js";
 import { MapPin, Phone } from "lucide-react";
 
 const TopBar = () => (
-  <div className="hidden md:flex items-center justify-center gap-6 bg-primario py-2 px-4" style={{ fontFamily: "var(--font-subtitulos)", fontSize: "10px" }}>
+  <>
+  <div className="hidden md:flex items-center justify-center gap-6 bg-primario py-2 px-4 fixed top-0 left-0 right-0 z-[60]" style={{ fontFamily: "var(--font-subtitulos)", fontSize: "10px" }}>
     <span className="flex items-center gap-1.5 text-fondo">
       <MapPin size={12} /> {CONFIG.direccion}
     </span>
