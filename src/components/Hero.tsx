@@ -2,6 +2,17 @@ import { useEffect, useState } from "react";
 import CONFIG from "../config.js";
 import { ChevronDown } from "lucide-react";
 
+// ─── Imagen hero opcional ────────────────────────────────────────
+// ─── Imagen hero opcional — se intenta cargar, si no existe queda null ──
+let heroImg: string | null = null;
+try {
+  const mod = import.meta.glob("../assets/gallery/imagenHero.png", { eager: true }) as Record<string, { default: string }>;
+  const keys = Object.keys(mod);
+  if (keys.length > 0) heroImg = mod[keys[0]].default;
+} catch {
+  heroImg = null;
+}
+
 const whatsappUrl = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(CONFIG.whatsappMensaje)}`;
 
 const isLightBackground = (hex: string): boolean => {
@@ -155,19 +166,70 @@ const Hero = () => {
           </p>
         </div>
 
+        {/* ── Lado derecho: foto o placeholder ── */}
         <div className="hidden lg:flex items-center justify-center">
-          <div className="w-full max-w-[460px] h-[500px] rounded-2xl flex items-center justify-center"
-            style={{
-              background: isLight ? `rgba(${pr},${pg},${pb},0.08)` : "rgba(255,255,255,0.06)",
-              boxShadow: `0 0 60px rgba(${pr},${pg},${pb},0.15)`,
-              border: `1px solid rgba(${pr},${pg},${pb},0.20)`,
-            }}>
-            <svg width="120" height="120" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" strokeWidth="0.8"
-              style={{ color: "var(--primario)", opacity: 0.7 }}>
-              <path d="M12 2C9.5 2 7 3.5 6 6c-1 2.5-.5 5 0 7 .5 2 1 4 1.5 5.5S9 22 10.5 22c1 0 1-1.5 1.5-3s1-3 1.5-3 1 1.5 1.5 3 .5 3 1.5 3c1.5 0 2-2 2.5-3.5S20 15.5 20.5 13c.5-2 1-4.5 0-7-1-2.5-3.5-4-6-4h-2.5z" />
-            </svg>
-          </div>
+          {heroImg ? (
+            // ── CON IMAGEN ──────────────────────────────────────
+            <div className="relative w-full max-w-[460px]">
+              <div className="relative rounded-2xl overflow-hidden"
+                style={{
+                  height: "520px",
+                  boxShadow: `0 25px 60px rgba(${pr},${pg},${pb},0.25)`,
+                  border: `1px solid rgba(${pr},${pg},${pb},0.20)`,
+                }}>
+                <img
+                  src={heroImg}
+                  alt={CONFIG.nombreNegocio}
+                  className="w-full h-full object-cover object-center"
+                />
+                {/* Gradiente inferior */}
+                <div className="absolute inset-0"
+                  style={{
+                    background: `linear-gradient(to top, rgba(${pr},${pg},${pb},0.40) 0%, transparent 55%)`,
+                  }} />
+                {/* Caption */}
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <p className="font-subtitulos font-bold text-white"
+                    style={{ fontSize: "13px", letterSpacing: "0.05em" }}>
+                    {CONFIG.nombreNegocio}
+                  </p>
+                  <p className="font-cuerpo text-white/70 mt-1"
+                    style={{ fontSize: "11px" }}>
+                    {CONFIG.ciudad}, {CONFIG.pais}
+                  </p>
+                </div>
+              </div>
+              {/* Badge flotante */}
+              <div className="absolute -bottom-4 -right-4 rounded-xl px-4 py-3"
+                style={{
+                  background: "var(--primario)",
+                  boxShadow: `0 8px 24px rgba(${pr},${pg},${pb},0.40)`,
+                }}>
+                <p className="font-subtitulos font-bold text-white text-center"
+                  style={{ fontSize: "18px" }}>
+                  {CONFIG.stats[0].numero}
+                </p>
+                <p className="font-cuerpo text-white/80 text-center"
+                  style={{ fontSize: "10px" }}>
+                  {CONFIG.stats[0].sublabel}
+                </p>
+              </div>
+            </div>
+          ) : (
+            // ── SIN IMAGEN: placeholder original ───────────────
+            <div className="w-full max-w-[460px] h-[500px] rounded-2xl flex items-center justify-center"
+              style={{
+                background: isLight ? `rgba(${pr},${pg},${pb},0.08)` : "rgba(255,255,255,0.06)",
+                boxShadow: `0 0 60px rgba(${pr},${pg},${pb},0.15)`,
+                border: `1px solid rgba(${pr},${pg},${pb},0.20)`,
+              }}>
+              <svg width="120" height="120" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" strokeWidth="0.8"
+                style={{ color: "var(--primario)", opacity: 0.7 }}>
+                <path d="M12 2C9.5 2 7 3.5 6 6c-1 2.5-.5 5 0 7 .5 2 1 4 1.5 5.5S9 22 10.5 22c1 0 1-1.5 1.5-3s1-3 1.5-3 1 1.5 1.5 3 .5 3 1.5 3c1.5 0 2-2 2.5-3.5S20 15.5 20.5 13c.5-2 1-4.5 0-7-1-2.5-3.5-4-6-4h-2.5z" />
+              </svg>
+            </div>
+          )}
         </div>
       </div>
 
