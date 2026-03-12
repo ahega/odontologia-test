@@ -1,45 +1,46 @@
 const CONFIG = {
-  nombreNegocio:    "Mery Mendoza Estética Dental",
-  nombreCorto:      "Mery Mendoza",
-  slogan:           "Estética dental con precisión y elegancia",
-  sloganHero:       "Tu Sonrisa Perfecta en Manos Expertas en Bogotá",
-  subtituloHero:    "Odontología estética y general con tecnología moderna. Blanqueamiento, implantes, ortodoncia y más — atención personalizada en Bogotá.",
-  doctorNombre:     "Dra. Mery Mendoza",
-  doctorTitulo:     "Odontóloga Estética",
-  descripcionSobre: "Soy la Dra. Mery Mendoza, odontóloga especializada en estética dental en Bogotá. Mi pasión es transformar sonrisas con precisión, cuidado y un enfoque completamente personalizado. Combino tecnología moderna con técnicas de vanguardia para ofrecerte resultados naturales, duraderos y que realcen tu confianza.",
+  nombreNegocio:    "Dentalia Odontología La Isabela",
+  nombreCorto:      "Dentalia La Isabela",
+  slogan:           "Cuidado integral para tu sonrisa",
+  sloganHero:       "Tu Sonrisa en Manos Profesionales en Engativá",
+  subtituloHero:    "Odontología general, estética, ortodoncia y rehabilitación oral con atención cercana y profesional en Engativá, Bogotá.",
+  doctorNombre:     "Equipo Dentalia",
+  doctorTitulo:     "Especialistas en Odontología",
+  descripcionSobre: "En Dentalia Odontología La Isabela nos dedicamos a brindar atención odontológica integral para toda la familia. Nuestro enfoque combina experiencia, tecnología moderna y atención personalizada para cuidar la salud y estética de tu sonrisa.",
+
   tipoPerfil:       "odontologia",
 
   ciudad:           "Bogotá",
   pais:             "Colombia",
-  direccion:        "Cra. 77A #64c-11, Bogotá",
+  direccion:        "Calle 65bis # 86-85, Engativá, Bogotá",
   consultorio:      "",
   regionSEO:        "CO-DC",
 
-  whatsapp:         "573134077530",
-  whatsappMensaje:  "Hola Dra. Mery! Quiero agendar una cita",
-  telefono:         "+57 313 407 7530",
+  whatsapp:         "573000000000",
+  whatsappMensaje:  "Hola! Quiero agendar una cita en Dentalia Odontología La Isabela",
+  telefono:         "",
   email:            "",
 
-  instagram:        "@merymendozaesteticadental",
-  instagramURL:     "https://www.instagram.com/merymendozaesteticadental/",
-  facebook:         "merymendozaesteticadental",
-  facebookURL:      "https://www.facebook.com/merymendozaesteticadental",
+  instagram:        "@dentalia.laisabela",
+  instagramURL:     "https://www.instagram.com/dentalia.laisabela/",
+  facebook:         "",
+  facebookURL:      "",
   tiktok:           "",
   tiktokURL:        "",
 
   horarioSemana:    "Lunes a Viernes: 8:00am - 6:00pm",
-  horarioSabado:    "Sabados: 8:00am - 2:00pm",
+  horarioSabado:    "Sábados: 8:00am - 2:00pm",
   horarioDomingo:   "",
 
   colores: {
-    primario:        "#8B6FD4",   // ← lila principal
-    primarioDeep:    "#7458C0",   // ← lila oscuro hover
-    primarioMedio:   "#9D85DC",   // ← lila medio
-    primarioLight:   "#C4B3ED",   // ← lila claro
-    primarioPale:    "#EDE8F9",   // ← lila muy suave
-    primarioSubtle:  "#F5F3FC",   // ← fondo secciones alternas
-    oscuro:          "#1A0F3D",   // ← morado muy oscuro — hero y footer
-    heroFondo:       "#1A0F3D",   // ← mismo oscuro = hero oscuro elegante
+    primario:        "#8B6FD4",
+    primarioDeep:    "#7458C0",
+    primarioMedio:   "#9D85DC",
+    primarioLight:   "#C4B3ED",
+    primarioPale:    "#EDE8F9",
+    primarioSubtle:  "#F5F3FC",
+    oscuro:          "#1A0F3D",
+    heroFondo:       "#1A0F3D",
     textoPrimario:   "#1A0F3D",
     textoSecundario: "#3D2E6B",
     textoMuted:      "#7B6BA0",
@@ -54,83 +55,83 @@ const CONFIG = {
   },
 
   stats: [
-    { numero: "500+", label: "Pacientes Satisfechas", sublabel: "En Bogotá" },
-    { numero: "7",    label: "Servicios Disponibles", sublabel: "Atención integral" },
-    { numero: "100%", label: "Compromiso",            sublabel: "Con tu sonrisa" },
-    { numero: "5",    label: "Calificación",          sublabel: "Pacientes felices" },
+    { numero: "500+", label: "Pacientes Atendidos", sublabel: "En Engativá" },
+    { numero: "4",    label: "Especialidades",      sublabel: "Odontología integral" },
+    { numero: "100%", label: "Compromiso",          sublabel: "Con tu salud dental" },
+    { numero: "5",    label: "Calificación",        sublabel: "Pacientes satisfechos" },
   ],
 
   servicios: [
     {
       id: "estetica-dental", icono: "✨", nombre: "Odontología Estética",
-      descripcion: "Tratamientos estéticos de alto nivel para transformar la apariencia de tu sonrisa con resultados naturales y elegantes.",
-      features: ["Carillas de porcelana", "Restauraciones estéticas", "Resultado natural"],
+      descripcion: "Tratamientos estéticos para mejorar la apariencia de tu sonrisa con resultados naturales y armónicos.",
+      features: ["Carillas estéticas", "Restauraciones", "Resultados naturales"],
     },
     {
       id: "blanqueamiento", icono: "💎", nombre: "Blanqueamiento Dental",
-      descripcion: "Recupera la blancura y el brillo natural de tu sonrisa. Seguro, rápido y efectivo desde la primera sesión.",
-      features: ["Resultado inmediato", "Seguro y certificado", "Varios tonos más blanco"],
+      descripcion: "Recupera el brillo natural de tu sonrisa con tratamientos seguros y supervisados.",
+      features: ["Resultado visible", "Seguro", "Mejora estética"],
     },
     {
-      id: "implantes", icono: "🦷", nombre: "Implantes Dentales",
-      descripcion: "Recupera tu sonrisa completa con implantes de titanio. Resultado natural, funcional y permanente.",
-      features: ["Titanio certificado", "Resultado permanente", "Planificación precisa"],
+      id: "implantes", icono: "🦷", nombre: "Rehabilitación Oral",
+      descripcion: "Recupera la funcionalidad y estética de tu sonrisa con tratamientos de rehabilitación oral personalizados.",
+      features: ["Restauración dental", "Función masticatoria", "Sonrisa natural"],
     },
     {
       id: "ortodoncia", icono: "😁", nombre: "Ortodoncia",
-      descripcion: "Alineación dental con brackets o alineadores transparentes. Plan personalizado para todas las edades.",
-      features: ["Brackets y alineadores", "Para todas las edades", "Seguimiento cercano"],
+      descripcion: "Alineación dental para mejorar la mordida y la estética de tu sonrisa.",
+      features: ["Corrección dental", "Para jóvenes y adultos", "Seguimiento profesional"],
     },
     {
       id: "endodoncia", icono: "🔬", nombre: "Endodoncia",
-      descripcion: "Tratamiento de conductos sin dolor para salvar dientes comprometidos con técnicas modernas.",
-      features: ["Sin dolor", "Alta tasa de éxito", "Técnicas modernas"],
+      descripcion: "Tratamientos de conducto para salvar dientes afectados y eliminar el dolor.",
+      features: ["Tratamiento preciso", "Alivio del dolor", "Preservación dental"],
     },
     {
       id: "limpieza", icono: "🪥", nombre: "Limpieza y Prevención",
-      descripcion: "Profilaxis dental profesional, sellantes y fluorización para mantener tu boca en perfectas condiciones.",
-      features: ["Profilaxis completa", "Sellantes", "Fluorización"],
+      descripcion: "Profilaxis y prevención para mantener tu salud oral en óptimas condiciones.",
+      features: ["Eliminación de sarro", "Prevención", "Salud oral"],
     },
     {
       id: "general", icono: "🩺", nombre: "Odontología General",
-      descripcion: "Diagnósticos completos y restauraciones para toda la familia.",
-      features: ["Diagnóstico completo", "Restauraciones", "Toda la familia"],
+      descripcion: "Atención odontológica integral para diagnóstico, tratamiento y prevención.",
+      features: ["Diagnóstico", "Tratamientos básicos", "Atención familiar"],
     },
   ],
 
   casos: [
-    { servicio: "Odontología Estética", titulo: "Transformación con carillas",    descripcion: "Carillas de porcelana. Resultado natural, elegante y perfectamente armonioso." },
-    { servicio: "Blanqueamiento",       titulo: "Blanqueamiento profesional",     descripcion: "Varios tonos más blanco en una sesión. Resultado brillante y duradero." },
-    { servicio: "Implantes",            titulo: "Rehabilitación con implante",    descripcion: "Implante oseointegrado. Resultado imperceptible, natural y permanente." },
-    { servicio: "Ortodoncia",           titulo: "Corrección de apiñamiento",      descripcion: "18 meses con brackets estéticos. Sonrisa alineada y mordida funcional." },
-    { servicio: "Endodoncia",           titulo: "Rescate y restauración",         descripcion: "Endodoncia + corona de porcelana. Diente conservado y restaurado." },
-    { servicio: "Odontología General",  titulo: "Restauración estética completa", descripcion: "Restauraciones compuestas. Dientes sanos, funcionales y estéticos." },
+    { servicio: "Odontología Estética", titulo: "Mejora estética de sonrisa", descripcion: "Tratamiento estético para lograr una sonrisa más armónica y natural." },
+    { servicio: "Blanqueamiento", titulo: "Blanqueamiento profesional", descripcion: "Sonrisa más blanca y brillante con tratamiento seguro." },
+    { servicio: "Rehabilitación Oral", titulo: "Recuperación funcional", descripcion: "Tratamiento para recuperar la funcionalidad y estética dental." },
+    { servicio: "Ortodoncia", titulo: "Corrección de alineación", descripcion: "Tratamiento ortodóntico para mejorar mordida y estética." },
+    { servicio: "Endodoncia", titulo: "Salvando el diente natural", descripcion: "Tratamiento de conducto exitoso para conservar la pieza dental." },
+    { servicio: "Odontología General", titulo: "Restauración dental", descripcion: "Tratamiento restaurador para mantener la salud oral." },
   ],
 
   testimonios: [
-    { nombre: "Daniela R.", servicio: "Odontología Estética", ciudad: "Bogotá", texto: "La Dra. Mery transformó mi sonrisa completamente. El resultado de las carillas fue increíblemente natural y elegante. Me siento radiante.", estrellas: 5 },
-    { nombre: "Camila S.",  servicio: "Blanqueamiento",       ciudad: "Bogotá", texto: "El blanqueamiento fue espectacular. En una sola sesión noté un cambio enorme. Muy cómodo y sin sensibilidad. Muy profesional.", estrellas: 5 },
-    { nombre: "Andrés M.",  servicio: "Implantes",            ciudad: "Bogotá", texto: "La experiencia fue mucho mejor de lo esperado. La doctora explicó todo con claridad y el resultado quedó perfecto y natural.", estrellas: 5 },
-    { nombre: "Valeria T.", servicio: "Ortodoncia",           ciudad: "Bogotá", texto: "Ortodoncia con alineadores fue la mejor decisión. La Dra. Mery tiene un ojo estético extraordinario. Resultado armonioso y natural.", estrellas: 5 },
-    { nombre: "Jorge P.",   servicio: "Endodoncia",           ciudad: "Bogotá", texto: "Vine con mucho miedo y salí sorprendido, no dolió nada. La Dra. Mery es muy hábil y profesional.", estrellas: 5 },
+    { nombre: "Laura G.", servicio: "Ortodoncia", ciudad: "Bogotá", texto: "Excelente atención. El equipo es muy profesional y me explicaron todo el tratamiento paso a paso.", estrellas: 5 },
+    { nombre: "Carlos M.", servicio: "Rehabilitación Oral", ciudad: "Bogotá", texto: "Recuperé mi sonrisa gracias a Dentalia. Muy buen servicio y atención.", estrellas: 5 },
+    { nombre: "Paula R.", servicio: "Blanqueamiento", ciudad: "Bogotá", texto: "Quedé muy feliz con el resultado del blanqueamiento. Muy recomendable.", estrellas: 5 },
+    { nombre: "Andrés P.", servicio: "Odontología General", ciudad: "Bogotá", texto: "Atención muy profesional y amable. Me sentí muy cómodo durante todo el tratamiento.", estrellas: 5 },
+    { nombre: "Natalia S.", servicio: "Limpieza Dental", ciudad: "Bogotá", texto: "Muy buena experiencia. Atención cuidadosa y profesional.", estrellas: 5 },
   ],
 
   faqs: [
-    { pregunta: "¿Qué incluye la odontología estética?",    respuesta: "Abarca carillas de porcelana, restauraciones estéticas, blanqueamiento y procedimientos para mejorar color, forma y apariencia. Plan personalizado según cada caso." },
-    { pregunta: "¿Cuánto dura un implante dental?",         respuesta: "Con cuidado adecuado puede durar toda la vida. El proceso completo toma entre 3 y 6 meses." },
-    { pregunta: "¿La ortodoncia funciona en adultos?",      respuesta: "Sí, es efectiva a cualquier edad. Ofrecemos brackets tradicionales, estéticos y alineadores transparentes." },
-    { pregunta: "¿El blanqueamiento daña el esmalte?",      respuesta: "No cuando es realizado por profesionales con productos certificados y supervisión completa." },
-    { pregunta: "¿La endodoncia duele?",                    respuesta: "No. Con anestesia moderna es completamente cómoda. El objetivo es eliminar el dolor, no generarlo." },
-    { pregunta: "¿Con qué frecuencia debo hacer limpieza?", respuesta: "Se recomienda cada 6 meses. Elimina sarro y placa que el cepillado diario no alcanza." },
-    { pregunta: "¿Cómo puedo agendar mi cita?",             respuesta: "Por WhatsApp al +57 313 407 7530, Instagram @merymendozaesteticadental o el formulario de esta página." },
-    { pregunta: "¿Tienen opciones de financiación?",        respuesta: "Sí, manejamos opciones de pago accesibles. Consulta las alternativas en tu primera cita." },
+    { pregunta: "¿Qué servicios ofrecen?", respuesta: "Ofrecemos odontología general, estética, ortodoncia, rehabilitación oral, limpiezas y tratamientos especializados para cuidar tu sonrisa." },
+    { pregunta: "¿Atienden adultos y niños?", respuesta: "Sí, brindamos atención odontológica para toda la familia." },
+    { pregunta: "¿Dónde están ubicados?", respuesta: "Estamos ubicados en la Calle 65bis # 86-85 en Engativá, Bogotá." },
+    { pregunta: "¿Cómo puedo agendar una cita?", respuesta: "Puedes agendar tu cita escribiéndonos por WhatsApp o a través de nuestro Instagram @dentalia.laisabela." },
+    { pregunta: "¿Realizan ortodoncia?", respuesta: "Sí, contamos con tratamientos de ortodoncia para mejorar la alineación dental y la mordida." },
+    { pregunta: "¿Realizan limpiezas dentales?", respuesta: "Sí, realizamos profilaxis dental profesional para mantener una correcta salud oral." },
+    { pregunta: "¿Cuánto dura una consulta?", respuesta: "La duración depende del tratamiento, pero una consulta inicial suele durar entre 30 y 45 minutos." },
+    { pregunta: "¿Atienden con cita previa?", respuesta: "Sí, recomendamos agendar tu cita previamente para brindarte una mejor atención." },
   ],
 
   seo: {
-    titlePrincipal: "Mery Mendoza | Estética Dental en Bogotá - Blanqueamiento, Implantes y Carillas",
-    descripcion:    "Dra. Mery Mendoza - odontóloga estética en Bogotá. Blanqueamiento, implantes, ortodoncia y carillas con tecnología moderna.",
-    keywords:       "Mery Mendoza odontóloga, estética dental Bogotá, blanqueamiento Bogotá, implantes Bogotá, carillas Bogotá",
-    canonicalURL:   "https://www.merymendozaesteticadental.com.co/",
+    titlePrincipal: "Dentalia Odontología La Isabela | Odontología en Engativá Bogotá",
+    descripcion:    "Dentalia Odontología La Isabela en Engativá, Bogotá. Odontología general, estética, ortodoncia y rehabilitación oral.",
+    keywords:       "odontología Engativá, dentista Engativá Bogotá, ortodoncia Engativá, odontología estética Bogotá",
+    canonicalURL:   "",
   },
 };
 
