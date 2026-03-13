@@ -1,28 +1,25 @@
 const CONFIG = {
-  nombreNegocio:    "Dentalia Odontología La Isabela",
-  nombreCorto:      "Dentalia La Isabela",
-  slogan:           "Cuidado integral para tu sonrisa",
-  sloganHero:       "Tu Sonrisa en Manos Profesionales en Engativá",
-  subtituloHero:    "Odontología general, estética, ortodoncia y rehabilitación oral con atención cercana y profesional en Engativá, Bogotá.",
-  doctorNombre:     "Equipo Dentalia",
-  doctorTitulo:     "Especialistas en Odontología",
-  descripcionSobre: "En Dentalia Odontología La Isabela nos dedicamos a brindar atención odontológica integral para toda la familia. Nuestro enfoque combina experiencia, tecnología moderna y atención personalizada para cuidar la salud y estética de tu sonrisa.",
-
-  tipoPerfil:       "odontologia",
+  nombreNegocio:    "DentalCare Odontología Digital",
+  nombreCorto:      "DentalCare",
+  slogan:           "Tu sonrisa en manos de especialistas",
+  sloganHero:       "Odontología Digital de Alta Especialidad",
+  subtituloHero:    "Diseño de sonrisa y odontología especializada con la tecnología más actualizada en Bogotá. Tu sonrisa merece lo mejor.",
+  descripcionSobre: "En DentalCare Odontología Digital somos especialistas en diseño de sonrisa y odontología avanzada. Manejamos lo más actualizado en tecnología odontológica digital para ofrecerte diagnósticos precisos, tratamientos efectivos y resultados que transforman tu vida. En Bogotá, tu sonrisa está en las mejores manos.",
+  tipoPerfil:       "clinica",
 
   ciudad:           "Bogotá",
   pais:             "Colombia",
-  direccion:        "Calle 65bis # 86-85, Engativá, Bogotá",
+  direccion:        "Bogotá, Colombia",
   consultorio:      "",
   regionSEO:        "CO-DC",
 
-  whatsapp:         "573000000000",
-  whatsappMensaje:  "Hola! Quiero agendar una cita en Dentalia Odontología La Isabela",
+  whatsapp:         "573117275461",
+  whatsappMensaje:  "Hola DentalCare! Quiero agendar una cita de valoración",
   telefono:         "",
   email:            "",
 
-  instagram:        "@dentalia.laisabela",
-  instagramURL:     "https://www.instagram.com/dentalia.laisabela/",
+  instagram:        "@dentalcare_odontologia_digital",
+  instagramURL:     "https://www.instagram.com/dentalcare_odontologia_digital/",
   facebook:         "",
   facebookURL:      "",
   tiktok:           "",
@@ -32,20 +29,23 @@ const CONFIG = {
   horarioSabado:    "Sábados: 8:00am - 2:00pm",
   horarioDomingo:   "",
 
+  doctorNombre:     "Equipo DentalCare",
+  doctorTitulo:     "Especialistas en Odontología Digital",
+
   colores: {
-    primario:        "#8B6FD4",
-    primarioDeep:    "#7458C0",
-    primarioMedio:   "#9D85DC",
-    primarioLight:   "#C4B3ED",
-    primarioPale:    "#EDE8F9",
-    primarioSubtle:  "#F5F3FC",
-    oscuro:          "#1A0F3D",
-    heroFondo:       "#1A0F3D",
-    textoPrimario:   "#1A0F3D",
-    textoSecundario: "#3D2E6B",
-    textoMuted:      "#7B6BA0",
+    primario:        "#C0392B",   // Rojo suave elegante — color principal
+    primarioDeep:    "#A93226",   // Rojo profundo
+    primarioMedio:   "#CD6155",   // Rojo medio suave
+    primarioLight:   "#E8A89C",   // Rojo claro rosado
+    primarioPale:    "#FAEAEA",   // Rojo muy pálido
+    primarioSubtle:  "#FDF5F5",   // Casi blanco rosado
+    oscuro:          "#132436",   // Azul marino muy oscuro — navbar/footer
+    heroFondo:       "#172a3f",   // Hero azul oscuro elegante
+    textoPrimario:   "#0D1B2A",
+    textoSecundario: "#1B3A5C",
+    textoMuted:      "#5A7A9A",
     fondo:           "#FFFFFF",
-    fondoAlt:        "#F5F3FC",
+    fondoAlt:        "#F5F8FC",   // Azul muy pálido sutil
   },
 
   tipografia: {
@@ -55,83 +55,87 @@ const CONFIG = {
   },
 
   stats: [
-    { numero: "500+", label: "Pacientes Atendidos", sublabel: "En Engativá" },
-    { numero: "4",    label: "Especialidades",      sublabel: "Odontología integral" },
-    { numero: "100%", label: "Compromiso",          sublabel: "Con tu salud dental" },
-    { numero: "5",    label: "Calificación",        sublabel: "Pacientes satisfechos" },
+    { numero: "13.7K", label: "Seguidores",   sublabel: "Comunidad que confía" },
+    { numero: "315+",  label: "Casos",         sublabel: "Tratados con éxito" },
+    { numero: "100%",  label: "Digital",       sublabel: "Tecnología de vanguardia" },
+    { numero: "5★",    label: "Calificación",  sublabel: "Pacientes satisfechos" },
   ],
 
   servicios: [
     {
-      id: "estetica-dental", icono: "✨", nombre: "Odontología Estética",
-      descripcion: "Tratamientos estéticos para mejorar la apariencia de tu sonrisa con resultados naturales y armónicos.",
-      features: ["Carillas estéticas", "Restauraciones", "Resultados naturales"],
+      id:          "diseno-sonrisa",
+      icono:       "✨",
+      nombre:      "Diseño de Sonrisa",
+      descripcion: "Smile Design personalizado con tecnología digital. Analizamos tu rostro y diseñamos la sonrisa perfecta para ti con resultados naturales y armoniosos.",
+      features:    ["Análisis digital", "Totalmente personalizado", "Resultado natural"],
     },
     {
-      id: "blanqueamiento", icono: "💎", nombre: "Blanqueamiento Dental",
-      descripcion: "Recupera el brillo natural de tu sonrisa con tratamientos seguros y supervisados.",
-      features: ["Resultado visible", "Seguro", "Mejora estética"],
+      id:          "resinas",
+      icono:       "💎",
+      nombre:      "Resinas de Alta Estética",
+      descripcion: "Restauraciones con resinas de última generación para corregir forma, color y tamaño dental. Resultado imperceptible e inmediato con mínima invasión.",
+      features:    ["Alta estética", "Mínima invasión", "Resultado inmediato"],
     },
     {
-      id: "implantes", icono: "🦷", nombre: "Rehabilitación Oral",
-      descripcion: "Recupera la funcionalidad y estética de tu sonrisa con tratamientos de rehabilitación oral personalizados.",
-      features: ["Restauración dental", "Función masticatoria", "Sonrisa natural"],
+      id:          "limpieza",
+      icono:       "🪥",
+      nombre:      "Limpieza Dental Profunda",
+      descripcion: "Profilaxis y detartraje profesional para eliminar sarro, placa y manchas. Fundamental para mantener tu salud bucal y prevenir enfermedades de encías.",
+      features:    ["Detartraje completo", "Prevención", "Toda la familia"],
     },
     {
-      id: "ortodoncia", icono: "😁", nombre: "Ortodoncia",
-      descripcion: "Alineación dental para mejorar la mordida y la estética de tu sonrisa.",
-      features: ["Corrección dental", "Para jóvenes y adultos", "Seguimiento profesional"],
+      id:          "placa",
+      icono:       "🛡️",
+      nombre:      "Placa Protectora",
+      descripcion: "Diseño y elaboración de placas oclusales personalizadas para proteger tus dientes del bruxismo y el desgaste nocturno. Comodidad y protección total.",
+      features:    ["Diseño personalizado", "Protección nocturna", "Anti-bruxismo"],
     },
     {
-      id: "endodoncia", icono: "🔬", nombre: "Endodoncia",
-      descripcion: "Tratamientos de conducto para salvar dientes afectados y eliminar el dolor.",
-      features: ["Tratamiento preciso", "Alivio del dolor", "Preservación dental"],
+      id:          "radiografia",
+      icono:       "🔬",
+      nombre:      "Radiografía Digital",
+      descripcion: "Diagnóstico por imagen con radiografía digital de última generación. Mayor precisión, menor radiación y resultados inmediatos para un diagnóstico certero.",
+      features:    ["Menor radiación", "Alta precisión", "Resultado inmediato"],
     },
     {
-      id: "limpieza", icono: "🪥", nombre: "Limpieza y Prevención",
-      descripcion: "Profilaxis y prevención para mantener tu salud oral en óptimas condiciones.",
-      features: ["Eliminación de sarro", "Prevención", "Salud oral"],
-    },
-    {
-      id: "general", icono: "🩺", nombre: "Odontología General",
-      descripcion: "Atención odontológica integral para diagnóstico, tratamiento y prevención.",
-      features: ["Diagnóstico", "Tratamientos básicos", "Atención familiar"],
+      id:          "diagnostico",
+      icono:       "🩺",
+      nombre:      "Diagnóstico y Tratamiento",
+      descripcion: "Valoración odontológica completa con tecnología digital. Plan de tratamiento personalizado y seguimiento cercano para garantizar los mejores resultados.",
+      features:    ["Valoración completa", "Plan personalizado", "Seguimiento cercano"],
     },
   ],
 
   casos: [
-    { servicio: "Odontología Estética", titulo: "Mejora estética de sonrisa", descripcion: "Tratamiento estético para lograr una sonrisa más armónica y natural." },
-    { servicio: "Blanqueamiento", titulo: "Blanqueamiento profesional", descripcion: "Sonrisa más blanca y brillante con tratamiento seguro." },
-    { servicio: "Rehabilitación Oral", titulo: "Recuperación funcional", descripcion: "Tratamiento para recuperar la funcionalidad y estética dental." },
-    { servicio: "Ortodoncia", titulo: "Corrección de alineación", descripcion: "Tratamiento ortodóntico para mejorar mordida y estética." },
-    { servicio: "Endodoncia", titulo: "Salvando el diente natural", descripcion: "Tratamiento de conducto exitoso para conservar la pieza dental." },
-    { servicio: "Odontología General", titulo: "Restauración dental", descripcion: "Tratamiento restaurador para mantener la salud oral." },
+    { servicio: "Diseño de Sonrisa",        titulo: "Transformación con diseño digital",      descripcion: "Análisis digital completo y diseño de sonrisa personalizado. Resultado armónico y natural que cambió la vida del paciente." },
+    { servicio: "Resinas de Alta Estética",  titulo: "Restauración imperceptible con resinas", descripcion: "Corrección de forma y color en piezas anteriores con resinas premium. Resultado natural e imperceptible desde la primera cita." },
+    { servicio: "Limpieza Dental Profunda",  titulo: "Salud periodontal restaurada",            descripcion: "Limpieza profunda y detartraje completo. Encías saludables y sonrisa radiante con seguimiento preventivo personalizado." },
   ],
 
   testimonios: [
-    { nombre: "Laura G.", servicio: "Ortodoncia", ciudad: "Bogotá", texto: "Excelente atención. El equipo es muy profesional y me explicaron todo el tratamiento paso a paso.", estrellas: 5 },
-    { nombre: "Carlos M.", servicio: "Rehabilitación Oral", ciudad: "Bogotá", texto: "Recuperé mi sonrisa gracias a Dentalia. Muy buen servicio y atención.", estrellas: 5 },
-    { nombre: "Paula R.", servicio: "Blanqueamiento", ciudad: "Bogotá", texto: "Quedé muy feliz con el resultado del blanqueamiento. Muy recomendable.", estrellas: 5 },
-    { nombre: "Andrés P.", servicio: "Odontología General", ciudad: "Bogotá", texto: "Atención muy profesional y amable. Me sentí muy cómodo durante todo el tratamiento.", estrellas: 5 },
-    { nombre: "Natalia S.", servicio: "Limpieza Dental", ciudad: "Bogotá", texto: "Muy buena experiencia. Atención cuidadosa y profesional.", estrellas: 5 },
+    { nombre: "Valentina R.", servicio: "Diseño de Sonrisa",        ciudad: "Bogotá", texto: "DentalCare transformó mi sonrisa completamente. La tecnología digital que usan es increíble — pude ver el resultado antes del tratamiento. Quedé encantada.", estrellas: 5 },
+    { nombre: "Carlos M.",    servicio: "Resinas de Alta Estética",  ciudad: "Bogotá", texto: "Las resinas quedaron perfectas, totalmente naturales. Nadie nota que son restauraciones. El equipo es muy profesional y detallista. Los recomiendo.", estrellas: 5 },
+    { nombre: "Laura P.",     servicio: "Limpieza Dental Profunda",  ciudad: "Bogotá", texto: "La limpieza fue muy completa y profesional. Me explicaron todo el proceso y el resultado fue espectacular. Ya agendé la próxima visita preventiva.", estrellas: 5 },
+    { nombre: "Andrés V.",    servicio: "Diagnóstico y Tratamiento", ciudad: "Bogotá", texto: "La valoración fue muy detallada. Me explicaron todo con radiografías digitales y el plan de tratamiento fue muy claro. Excelente atención.", estrellas: 5 },
+    { nombre: "Sofía G.",     servicio: "Placa Protectora",          ciudad: "Bogotá", texto: "Sufría de bruxismo y la placa que me diseñaron fue la solución perfecta. Ya no me duele la mandíbula y mis dientes están protegidos. Muy recomendada.", estrellas: 5 },
   ],
 
   faqs: [
-    { pregunta: "¿Qué servicios ofrecen?", respuesta: "Ofrecemos odontología general, estética, ortodoncia, rehabilitación oral, limpiezas y tratamientos especializados para cuidar tu sonrisa." },
-    { pregunta: "¿Atienden adultos y niños?", respuesta: "Sí, brindamos atención odontológica para toda la familia." },
-    { pregunta: "¿Dónde están ubicados?", respuesta: "Estamos ubicados en la Calle 65bis # 86-85 en Engativá, Bogotá." },
-    { pregunta: "¿Cómo puedo agendar una cita?", respuesta: "Puedes agendar tu cita escribiéndonos por WhatsApp o a través de nuestro Instagram @dentalia.laisabela." },
-    { pregunta: "¿Realizan ortodoncia?", respuesta: "Sí, contamos con tratamientos de ortodoncia para mejorar la alineación dental y la mordida." },
-    { pregunta: "¿Realizan limpiezas dentales?", respuesta: "Sí, realizamos profilaxis dental profesional para mantener una correcta salud oral." },
-    { pregunta: "¿Cuánto dura una consulta?", respuesta: "La duración depende del tratamiento, pero una consulta inicial suele durar entre 30 y 45 minutos." },
-    { pregunta: "¿Atienden con cita previa?", respuesta: "Sí, recomendamos agendar tu cita previamente para brindarte una mejor atención." },
+    { pregunta: "¿Qué es la odontología digital?",                  respuesta: "Es el uso de tecnología avanzada como radiografía digital, software de diseño de sonrisa y equipos de alta precisión para diagnósticos más certeros y tratamientos más efectivos y cómodos." },
+    { pregunta: "¿En qué consiste el diseño de sonrisa?",           respuesta: "Es un proceso donde analizamos digitalmente tu rostro, proporciones y deseos para diseñar la transformación ideal de tu sonrisa. Puedes ver el resultado antes de comenzar el tratamiento." },
+    { pregunta: "¿Las resinas estéticas son duraderas?",            respuesta: "Sí. Las resinas de alta estética modernas son muy resistentes y duraderas. Con cuidado adecuado pueden durar muchos años manteniendo su color y forma natural." },
+    { pregunta: "¿Con qué frecuencia debo hacer limpieza dental?",  respuesta: "Se recomienda cada 6 meses para eliminar sarro y placa que el cepillado diario no alcanza. Es fundamental para prevenir enfermedades de encías y caries." },
+    { pregunta: "¿Qué es el bruxismo y cómo me protejo?",           respuesta: "Es el apretamiento o rechinamiento involuntario de los dientes, generalmente nocturno. La placa protectora personalizada evita el desgaste y alivia el dolor mandibular." },
+    { pregunta: "¿La radiografía digital es segura?",               respuesta: "Sí, la radiografía digital emite hasta un 90% menos de radiación que la convencional. Es completamente segura y ofrece imágenes de mayor calidad para un diagnóstico más preciso." },
+    { pregunta: "¿Tienen cita de valoración?",                      respuesta: "Sí, ofrecemos cita de valoración donde evaluamos tu salud bucal con tecnología digital y diseñamos un plan de tratamiento personalizado para tus necesidades." },
+    { pregunta: "¿Cómo agendo mi cita?",                            respuesta: "Por WhatsApp o Instagram @dentalcare_odontologia_digital. Te respondemos rápidamente para coordinar tu cita de valoración." },
   ],
 
   seo: {
-    titlePrincipal: "Dentalia Odontología La Isabela | Odontología en Engativá Bogotá",
-    descripcion:    "Dentalia Odontología La Isabela en Engativá, Bogotá. Odontología general, estética, ortodoncia y rehabilitación oral.",
-    keywords:       "odontología Engativá, dentista Engativá Bogotá, ortodoncia Engativá, odontología estética Bogotá",
-    canonicalURL:   "",
+    titlePrincipal: "DentalCare Odontología Digital Bogotá | Diseño de Sonrisa y Especialistas",
+    descripcion:    "DentalCare Odontología Digital en Bogotá — diseño de sonrisa, resinas estéticas, limpieza dental y tecnología digital de vanguardia. Agenda tu cita de valoración.",
+    keywords:       "odontología digital Bogotá, diseño de sonrisa Bogotá, resinas estéticas Bogotá, limpieza dental Bogotá, DentalCare odontología",
+    canonicalURL:   "https://www.dentalcareodontologia.com.co/",
   },
 };
 

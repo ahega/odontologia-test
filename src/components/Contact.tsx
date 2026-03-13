@@ -1,6 +1,7 @@
 import { useState } from "react";
 import CONFIG from "../config.js";
 import { useScrollAnimate } from "../hooks/useScrollAnimate";
+import { MapPin, Phone, Instagram, Facebook, Clock } from "lucide-react";
 
 const whatsappUrl = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(CONFIG.whatsappMensaje)}`;
 
@@ -92,18 +93,28 @@ const Contact = () => {
             </h3>
 
             <div className="space-y-4 font-cuerpo" style={{ fontSize: "14px", color: textMid }}>
-              <div className="flex items-start gap-3">📍 <span>{CONFIG.direccion}</span></div>
-              {CONFIG.telefono   && <div className="flex items-start gap-3">📱 <span>{CONFIG.telefono}</span></div>}
-              {CONFIG.instagram  && (
-                <div className="flex items-start gap-3">📸
+              <div className="flex items-start gap-3">
+                <MapPin size={16} style={{ color: "var(--primario)", flexShrink: 0, marginTop: "2px" }} />
+                <span>{CONFIG.direccion}</span>
+              </div>
+              {CONFIG.telefono && (
+                <div className="flex items-start gap-3">
+                  <Phone size={16} style={{ color: "var(--primario)", flexShrink: 0, marginTop: "2px" }} />
+                  <span>{CONFIG.telefono}</span>
+                </div>
+              )}
+              {CONFIG.instagram && (
+                <div className="flex items-start gap-3">
+                  <Instagram size={16} style={{ color: "var(--primario)", flexShrink: 0, marginTop: "2px" }} />
                   <a href={CONFIG.instagramURL} target="_blank" rel="noopener noreferrer"
                     style={{ color: textMid }} className="hover:opacity-100 transition-opacity">
                     {CONFIG.instagram}
                   </a>
                 </div>
               )}
-              {CONFIG.facebook   && (
-                <div className="flex items-start gap-3">📘
+              {CONFIG.facebook && (
+                <div className="flex items-start gap-3">
+                  <Facebook size={16} style={{ color: "var(--primario)", flexShrink: 0, marginTop: "2px" }} />
                   <a href={CONFIG.facebookURL} target="_blank" rel="noopener noreferrer"
                     style={{ color: textMid }} className="hover:opacity-100 transition-opacity">
                     {CONFIG.facebook}
@@ -115,8 +126,15 @@ const Contact = () => {
             <div className="w-full h-px my-6" style={{ background: divider }} />
 
             <div className="space-y-2 font-cuerpo" style={{ fontSize: "14px", color: textMid }}>
-              <div className="flex items-start gap-3">🕐 <span>{CONFIG.horarioSemana}</span></div>
-              {CONFIG.horarioSabado && <div className="flex items-start gap-3 pl-7">{CONFIG.horarioSabado}</div>}
+              <div className="flex items-start gap-3">
+                <Clock size={16} style={{ color: "var(--primario)", flexShrink: 0, marginTop: "2px" }} />
+                <span>{CONFIG.horarioSemana}</span>
+              </div>
+              {CONFIG.horarioSabado && (
+                <div className="flex items-start gap-3 pl-7">
+                  <span>{CONFIG.horarioSabado}</span>
+                </div>
+              )}
             </div>
 
             <div className="w-full h-px my-6" style={{ background: divider }} />
@@ -129,24 +147,30 @@ const Contact = () => {
             </div>
 
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer"
-              className="mt-8 w-full flex items-center justify-center gap-2 rounded-full py-3 font-subtitulos font-bold transition-opacity hover:opacity-90"
-              style={{ background: "var(--primario)", color: "white" }}>
-              💬 Escribir por WhatsApp →
+              className="mt-8 w-full flex items-center justify-center rounded-full py-3 font-subtitulos font-bold transition-opacity hover:opacity-90"
+              style={{ background: "var(--primario)", color: "white", fontSize: "14px", gap: "8px" }}>
+              <span>{"💬"}</span>
+              <span>Escribir por WhatsApp</span>
+              <span>{"→"}</span>
             </a>
 
             {/* Redes sociales */}
-            <div className="flex gap-4 mt-6 justify-center">
+            <div className="flex gap-3 mt-6 justify-center">
               {CONFIG.instagramURL && (
                 <a href={CONFIG.instagramURL} target="_blank" rel="noopener noreferrer"
-                  aria-label="Instagram" style={{ color: textMid, fontSize: "20px" }}>📸</a>
+                  aria-label="Instagram"
+                  className="w-9 h-9 rounded-full flex items-center justify-center transition-opacity hover:opacity-80"
+                  style={{ background: "var(--primario)", color: "white" }}>
+                  <Instagram size={16} />
+                </a>
               )}
               {CONFIG.facebookURL && (
                 <a href={CONFIG.facebookURL} target="_blank" rel="noopener noreferrer"
-                  aria-label="Facebook" style={{ color: textMid, fontSize: "20px" }}>📘</a>
-              )}
-              {CONFIG.tiktokURL && (
-                <a href={CONFIG.tiktokURL} target="_blank" rel="noopener noreferrer"
-                  aria-label="TikTok" style={{ color: textMid, fontSize: "20px" }}>🎵</a>
+                  aria-label="Facebook"
+                  className="w-9 h-9 rounded-full flex items-center justify-center transition-opacity hover:opacity-80"
+                  style={{ background: "var(--primario)", color: "white" }}>
+                  <Facebook size={16} />
+                </a>
               )}
             </div>
           </div>

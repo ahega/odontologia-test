@@ -1,5 +1,21 @@
 import CONFIG from "../config.js";
 import { useScrollAnimate } from "../hooks/useScrollAnimate";
+import { Sparkles, Drill, Crown, Wand2, Sun, Microscope, Stethoscope, Scissors, Brush, Shield, Baby, Smile } from "lucide-react";
+
+const ICONOS: Record<string, React.ReactNode> = {
+  "estetica":       <Sparkles size={28} />,
+  "implantes":      <Drill size={28} />,
+  "rehabilitacion": <Crown size={28} />,
+  "armonizacion":   <Wand2 size={28} />,
+  "blanqueamiento": <Sun size={28} />,
+  "endodoncia":     <Microscope size={28} />,
+  "periodoncia":    <Stethoscope size={28} />,
+  "cirugia":        <Scissors size={28} />,
+  "general":        <Brush size={28} />,
+  "ortodoncia":     <Smile size={28} />,
+  "protesis":       <Shield size={28} />,
+  "odontopediatria": <Baby size={28} />,
+};
 
 const whatsappUrl = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(CONFIG.whatsappMensaje)}`;
 
@@ -26,13 +42,19 @@ const Services = () => {
               className="scroll-child scroll-animate bg-fondo rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1.5 hover:bg-primario-subtle cursor-default group"
               style={{
                 borderTop: "4px solid var(--primario)",
-                boxShadow: "0 4px 20px rgba(45,189,143,0.08)",
+                boxShadow: "0 4px 20px rgba(0,0,0,0.06)",
                 transform: i % 2 === 1 ? "translateY(20px)" : undefined,
               }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 40px rgba(45,189,143,0.15)"; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 20px rgba(45,189,143,0.08)"; }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 40px rgba(0,0,0,0.10)"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 20px rgba(0,0,0,0.06)"; }}
             >
-              <div className="text-3xl mb-3">{s.icono}</div>
+              <div className="mb-4 w-12 h-12 rounded-xl flex items-center justify-center transition-colors duration-300"
+                style={{ background: "var(--primario-pale)", color: "var(--primario)" }}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "var(--primario)"; (e.currentTarget as HTMLElement).style.color = "white"; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "var(--primario-pale)"; (e.currentTarget as HTMLElement).style.color = "var(--primario)"; }}
+              >
+                {ICONOS[s.id] ?? <Sparkles size={28} />}
+              </div>
               <h3 className="font-subtitulos font-bold text-oscuro mb-2" style={{ fontSize: "16px" }}>{s.nombre}</h3>
               <p className="font-cuerpo text-texto-muted mb-4 leading-relaxed" style={{ fontSize: "14px" }}>{s.descripcion}</p>
               <div className="flex flex-col gap-1">

@@ -1,6 +1,21 @@
 import { useEffect, useState } from "react";
 import CONFIG from "../config.js";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Sparkles, Drill, Crown, Wand2, Sun, Microscope, Stethoscope, Scissors, Brush, Shield, Baby, Smile } from "lucide-react";
+
+const ICONOS: Record<string, React.ReactNode> = {
+  "estetica":        <Sparkles size={12} />,
+  "implantes":       <Drill size={12} />,
+  "rehabilitacion":  <Crown size={12} />,
+  "armonizacion":    <Wand2 size={12} />,
+  "blanqueamiento":  <Sun size={12} />,
+  "endodoncia":      <Microscope size={12} />,
+  "periodoncia":     <Stethoscope size={12} />,
+  "cirugia":         <Scissors size={12} />,
+  "general":         <Brush size={12} />,
+  "ortodoncia":      <Smile size={12} />,
+  "protesis":        <Shield size={12} />,
+  "odontopediatria": <Baby size={12} />,
+};
 
 // ─── Imagen hero opcional ────────────────────────────────────────
 // ─── Imagen hero opcional — se intenta cargar, si no existe queda null ──
@@ -59,7 +74,7 @@ const Hero = () => {
           backgroundSize: "24px 24px",
         }} />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-[8%] w-full grid lg:grid-cols-2 gap-12 items-center pt-40 pb-32 lg:pt-32 lg:pb-0">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-[8%] w-full grid lg:grid-cols-2 gap-8 items-center pt-32 pb-16 lg:pt-32 lg:pb-0">
         <div className="max-w-[680px]">
 
           <span className="inline-block rounded-full px-4 py-1.5 font-subtitulos mb-6 transition-all duration-600"
@@ -112,14 +127,15 @@ const Hero = () => {
             }}>
             {CONFIG.servicios.slice(0, 5).map((s) => (
               <span key={s.id}
-                className="inline-flex items-center gap-1 rounded-full px-3 py-1 font-subtitulos"
+                className="inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 font-subtitulos"
                 style={{
                   fontSize: "11px",
                   background: tagBg,
                   border: `1px solid ${tagBorder}`,
                   color: textColorMuted,
                 }}>
-                {s.icono} {s.nombre}
+                <span style={{ opacity: 0.85 }}>{ICONOS[s.id] ?? <Sparkles size={12} />}</span>
+                {s.nombre}
               </span>
             ))}
           </div>
@@ -167,13 +183,13 @@ const Hero = () => {
         </div>
 
         {/* ── Lado derecho: foto o placeholder ── */}
-        <div className="hidden lg:flex items-center justify-center">
+        <div className="flex items-center justify-center">
           {heroImg ? (
             // ── CON IMAGEN ──────────────────────────────────────
             <div className="relative w-full max-w-[460px]">
               <div className="relative rounded-2xl overflow-hidden"
                 style={{
-                  height: "520px",
+                  height: "clamp(280px, 60vw, 520px)",
                   boxShadow: `0 25px 60px rgba(${pr},${pg},${pb},0.25)`,
                   border: `1px solid rgba(${pr},${pg},${pb},0.20)`,
                 }}>
